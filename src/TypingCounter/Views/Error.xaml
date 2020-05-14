@@ -1,0 +1,22 @@
+﻿<UserControl
+    x:Class="TypingCounter.Views.Error"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:local="clr-namespace:TypingCounter.ViewModels"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    d:DataContext="{d:DesignInstance local:ErrorViewModel}"
+    d:DesignHeight="350"
+    d:DesignWidth="525"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+    <Grid>
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Style="{StaticResource MaterialDesignHeadline6TextBlock}"
+            Text="エラーが発生しました。" />
+    </Grid>
+</UserControl>

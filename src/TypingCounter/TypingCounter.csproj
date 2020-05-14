@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>TypingCounter</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="FodyWeavers.xml" />
+    <None Remove="settings.json" />
+    <None Remove="TypingCounter.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TypingCounter.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="LiveCharts.NetCore" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.Wpf.NetCore3" Version="0.9.7" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.0" />
+    <PackageReference Include="morelinq" Version="3.3.2" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.6.1" />
+    <PackageReference Include="Prism.Unity" Version="7.2.0.1367" />
+    <PackageReference Include="PropertyChanged.Fody" Version="3.2.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\Core.Wpf\Core.Wpf.csproj" />
+    <ProjectReference Include="..\..\common\core\Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\Archives\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\config\NLog.config" Link="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

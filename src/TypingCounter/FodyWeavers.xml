@@ -1,0 +1,5 @@
+﻿<Weavers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
+  <!--On_PropertyName_Changed を非活性化-->
+  <!--see:https://github.com/Fody/PropertyChanged/wiki/Options#injectonpropertynamechanged-->
+  <PropertyChanged InjectOnPropertyNameChanged='false' />
+</Weavers>

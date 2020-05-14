@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{66A39165-8507-4842-BF99-98E0D94901B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "common\core\Core.csproj", "{BC6D31FC-EF64-4EF9-8577-A34272A4CD6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A30063A5-2FCD-49B2-948D-010856DE708E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{55686ED3-D151-4A11-89DA-F80D1F8CFECC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypingCounter.Test", "test\TypingCounter.Test\TypingCounter.Test.csproj", "{3594D4F6-5EE0-4D83-89F1-860141B8999A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{4C90CB78-F388-4ACD-AE88-27B5578C7DD7}"
+	ProjectSection(SolutionItems) = preProject
+		config\NLog.config = config\NLog.config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypingCounter", "src\TypingCounter\TypingCounter.csproj", "{3CA7DCA2-920C-4FBF-9D4F-EE59D833D5CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Wpf", "common\Core.Wpf\Core.Wpf.csproj", "{5719CC4F-F214-4D76-96DE-51DFB3408786}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC6D31FC-EF64-4EF9-8577-A34272A4CD6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6D31FC-EF64-4EF9-8577-A34272A4CD6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC6D31FC-EF64-4EF9-8577-A34272A4CD6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6D31FC-EF64-4EF9-8577-A34272A4CD6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3594D4F6-5EE0-4D83-89F1-860141B8999A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3594D4F6-5EE0-4D83-89F1-860141B8999A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3594D4F6-5EE0-4D83-89F1-860141B8999A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3594D4F6-5EE0-4D83-89F1-860141B8999A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA7DCA2-920C-4FBF-9D4F-EE59D833D5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA7DCA2-920C-4FBF-9D4F-EE59D833D5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA7DCA2-920C-4FBF-9D4F-EE59D833D5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA7DCA2-920C-4FBF-9D4F-EE59D833D5CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5719CC4F-F214-4D76-96DE-51DFB3408786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5719CC4F-F214-4D76-96DE-51DFB3408786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5719CC4F-F214-4D76-96DE-51DFB3408786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5719CC4F-F214-4D76-96DE-51DFB3408786}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC6D31FC-EF64-4EF9-8577-A34272A4CD6B} = {66A39165-8507-4842-BF99-98E0D94901B2}
+		{3594D4F6-5EE0-4D83-89F1-860141B8999A} = {55686ED3-D151-4A11-89DA-F80D1F8CFECC}
+		{3CA7DCA2-920C-4FBF-9D4F-EE59D833D5CB} = {A30063A5-2FCD-49B2-948D-010856DE708E}
+		{5719CC4F-F214-4D76-96DE-51DFB3408786} = {66A39165-8507-4842-BF99-98E0D94901B2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01C66DEC-68ED-40A9-9717-40C17CFCE978}
+	EndGlobalSection
+EndGlobal
